@@ -1,12 +1,3 @@
-#           R_Clinical_Descriptive_All_Groups.R
-#   
-#   Estadística descriptiva de datos clínicos y epidemiológicos. Toma de muestra: momento = basal.
-#
-#         1. Todos los grupos: HC, VIH, VIH/VHC- y VIH/VHC+ 
-#         2. Control sano vs pacientes VIH
-#         3. Compareción pareada entre todos los grupos
-#
-#  SGG & DVM
 #  =========================================================================
 #                 01.Clinical_Descriptive.R
 #  =========================================================================
