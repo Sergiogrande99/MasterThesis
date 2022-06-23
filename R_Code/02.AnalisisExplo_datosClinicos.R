@@ -5,7 +5,7 @@
 # we explored the variables in order to find outliers, describe the 
 # variable distribution and visualize the data
 #
-# Sergio Grande Garc�a & Daniel Valle-Millares
+# Sergio Grande García & Daniel Valle-Millares
 # ====================================================================
 
 #Libraries
@@ -34,7 +34,7 @@ cd4r_sexo <- ggplot(bd_infected, aes(y = reservorio.CD4r.basal, x = Grupo, fill 
   geom_boxplot(outlier.alpha = 0.5) +
   theme(legend.position="bottom", plot.title = element_text(face="bold"), text = element_text(size = 20)) + 
   labs(title="Reservorio CD4r",  fill = "Sexo", 
-       x ="Exposición al VHC", y = "Reservorio VIH (copias/millón cel.)")+
+       x ="ExposiciÃ³n al VHC", y = "Reservorio VIH (copias/millÃ³n cel.)")+
   scale_fill_discrete(name = "Sexo", labels = c("Hombre", "Mujer"))
 
 # HIV reservoir in PBMCs CD4-
@@ -42,7 +42,7 @@ restos_sexo <- ggplot(bd_infected, aes(y =  reservorio.Restos.basal, x = Grupo, 
   geom_boxplot(outlier.alpha = 0.5) + 
   theme(legend.position="bottom",plot.title = element_text(face="bold"), text = element_text(size = 20))+
   labs(title="Reservorio CMSPs CD4-",  fill = "Sexo",
-       x ="Exposición al VHC", y = "Reservorio VIH (copias/millón cel.)")+
+       x ="ExposiciÃ³n al VHC", y = "Reservorio VIH (copias/millÃ³n cel.)")+
   scale_fill_discrete(name = "Sexo", labels = c("Hombre", "Mujer"))
 
 # HIV reservoir in total PBMCs
@@ -50,7 +50,7 @@ restotal_sexo <- ggplot(bd_infected, aes(y =  reservorio.total, x = Grupo, fill 
   geom_boxplot(outlier.alpha = 0.5) + 
   theme(legend.position="bottom", plot.title = element_text(face="bold"), text = element_text(size = 20))+
   labs(title="Reservorio total",  fill = "Sexo",
-       x ="Exposición al VHC", y = "Reservorio VIH (copias/millón cel.)")+
+       x ="ExposiciÃ³n al VHC", y = "Reservorio VIH (copias/millÃ³n cel.)")+
   scale_fill_discrete(name = "Sexo", labels = c("Hombre", "Mujer"))
 
 
@@ -136,7 +136,7 @@ cd4_raincloud <- ggplot(bd_infected_outfilt, aes(y = reservorio.CD4r.basal, x = 
                                                          jitter.height = 0,
                                                          dodge.width = 0.2,)) +
   labs(title="Reservorio CD4r", fill = "Sexo",
-       x ="Exposición al VHC", y = "Reservorio VIH (copias/millón cel.)")+
+       x ="ExposiciÃ³n al VHC", y = "Reservorio VIH (copias/millÃ³n cel.)")+
   theme(text = element_text(size = 20), legend.position = "none")
 # HIV reservoir in total PBMCs
 total_raincloud <- ggplot(bd_infected_outfilt, aes(y = reservorio.total, x = Grupo, fill = SEXO)) + 
@@ -146,7 +146,7 @@ total_raincloud <- ggplot(bd_infected_outfilt, aes(y = reservorio.total, x = Gru
                                                          jitter.height = 0,
                                                          dodge.width = 0.2,)) +
   labs(title="Reservorio total", fill = "Sexo",
-       x ="Exposición al VHC", y = "Reservorio VIH (copias/millón cel.)")+
+       x ="ExposiciÃ³n al VHC", y = "Reservorio VIH (copias/millÃ³n cel.)")+
   theme(text = element_text(size = 20)) +
   scale_fill_discrete(name = "Sexo", labels = c("Hombre", "Mujer"))
 # Representation
