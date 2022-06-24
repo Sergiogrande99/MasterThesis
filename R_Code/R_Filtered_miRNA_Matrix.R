@@ -4,7 +4,7 @@
 #   Filtering and normalization of miRNA counts matrix using edgeR 
 #   package from BioConductor  
 #
-#   Sergio Grande García
+#   Sergio Grande GarcÃ­a
 # =======================================================================
 
 # ===========================================================
